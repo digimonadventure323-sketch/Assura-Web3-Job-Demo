@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .wallet-button {
+        @apply flex-1 text-sm py-2 px-4 rounded-md text-white font-semibold transition-colors bg-teal-600 hover:bg-teal-700 md:flex-none;
+    }
+    .transaction-header {
+        @apply font-semibold text-sm text-gray-500 dark:text-gray-400;
+    }
+    .project-action-button {
+        @apply w-full text-xs py-2 px-2 rounded-md text-white font-semibold transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+    }
+}
