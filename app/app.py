@@ -1,4 +1,5 @@
-import reflex as rx
+import sqlite3
+conn = sqlite3.connect(":memory:") 
 from app.components import header, main_content
 from app.state import AppState
 from app.states.chat_state import ChatState
